@@ -1,0 +1,101 @@
+@import "css/bootstrap";
+@import "checkbox.style";
+
+html,
+body {
+
+
+
+
+
+
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $white;
+		//font: 30px Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		text-shadow: 0px 1px black;
+		text-align: center;
+		//margin-bottom: 50px;
+	}
+
+
+
+$transition:all .35s ease-in-out 0s;
+
+
+
+	#container {padding-top:15px;padding-bottom:15px;
+
+		.entry {
+
+			.container {border-right:1px solid $white;margin-bottom:30px;min-height:15vh;display:flex;align-items:center;justify-content:center;
+
+				&:nth-child(4),
+				&:nth-child(8),
+				&:nth-child(12),
+				&:nth-child(16) {border:0;}
+
+			}
+
+			.button-container {}
+
+			.dates-container {
+
+				.dates1,
+				.dates2,
+				.dates3,
+				.dates4,
+				.dates5,
+				.dates6,
+				.dates7,
+				.dates8,
+				.dates9 {opacity:0;transform:translate(0,-100%);transition:$transition;
+
+					ul,
+					ul li {margin:0;padding:0;}
+
+					ul {
+
+						li {color:$white;transition:$transition;}
+
+					}
+
+				}
+
+				.dates1.datesShow1,
+				.dates2.datesShow2,
+				.dates3.datesShow3,
+				.dates4.datesShow4,
+				.dates5.datesShow5,
+				.dates6.datesShow6,
+				.dates7.datesShow7,
+				.dates8.datesShow8,
+				.dates9.datesShow9 {opacity:1;transform:translate(0,0);
+
+					ul {
+
+						li {line-height:5vh;text-transform:uppercase;}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+
+
+
+
+}

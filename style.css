@@ -22605,8 +22605,20 @@ textarea.form-control-lg {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-body {
+html {
   background: #555;
+}
+html ::-webkit-scrollbar {
+  width: 3px;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #333;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #00bf00;
+}
+html body {
+  background: transparent;
 }
 
 h1,
@@ -23225,7 +23237,7 @@ body #container {
 html #container .entry .container,
 body #container .entry .container {
   border-right: 1px solid #eee;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   min-height: 15vh;
   display: flex;
   align-items: center;
